@@ -1,0 +1,177 @@
+html,
+body {
+  font-family: Garamond;
+  height: 100%;
+  margin: 0;
+  padding: 5px;
+  background-color: #e4e8d4;
+}
+
+h2 {
+  text-align: center;
+}
+
+h5 {
+  float: right;
+  color: red;
+}
+
+.container {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+    
+  h2 {
+    text-align: left;
+  }
+
+  .itemList {
+    width: 300px;
+    height: 140px;
+    position: absolute;
+    z-index: 1;
+    background-color: #e9efcd
+    margin-top: 5px;
+    margin-left: 5px;
+    scroll-behavior: auto;
+  }
+
+  #map {
+    border: 1px solid #999;
+    height: 70vh;
+    width: 49vh;
+    transform: translate(0,35vw);
+    margin: 5px;
+  }
+
+  .searchbar {
+    padding: 5px;
+    margin-bottom: 7px;
+  }
+
+  .infoImage {
+    height: 100px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 2px;
+  }
+
+  .infoWindow {
+    text-align: center;
+    width: 210px;
+    height: 200px;
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 2px;
+  }
+}
+
+@media (min-width: 768px) {
+  #map {
+    height: 90vh;
+    margin: 5px;
+    transform: translate(30vw,5vw);
+  }
+
+  .searchbar {
+    width: 80%;
+    border: box-decoration-break:;
+    position: absolute;
+    font-size: 15px;
+    background-position: 210px 15px;
+    background-size: 1.3em;
+    background-repeat: no-repeat;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .itemList {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 5px;
+    scroll-behavior: auto;
+    height: 500px;
+    background-color: #e9efcd;
+  }
+
+  .infoWindow {
+    text-align: center;
+    width: 410px;
+    height: 300px;
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: 2px;
+  }
+
+  .infoImage {
+    height: 200px;
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 2px;
+  }
+}
+
+.list-group-item:hover {
+  background-color: #f4ffbd;
+}
+
+.toggleListings {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.toggleList {
+  display: none;
+}
+
+@media screen and (min-width:1280px) {
+  .itemList p {
+    font-size: 1.3em;
+  }
+
+  #map {
+    height: 80vh;
+    margin: 5px;
+    transform: translate(15vw,5vw);
+  }
+}
+
+@media (max-width: 400px) {
+  #map {
+    border: 1px solid #999;
+    height: 50vh;
+    width: 49vh;
+    transform: translate(-2vw,30vw);
+    margin: 2px;
+  }
+  .container {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+.searchbar {
+    padding: 2px;
+    margin-bottom: 2px;
+
+  }
+}
+
+.scrollable-menu {
+  height: 90%;
+  overflow-x: hidden;
+  margin: 0;
+  border: 1px;
+}
+
+.scrollable-menu li {
+  padding: 10px;
+}
+
+.scrollable-menu li a {
+  color: #e0e0e0;
+}
